@@ -18,5 +18,8 @@ puts "Creating memberships..."
 # * and a membership belongs to a gym.                                   *
 # ************************************************************************
 # Create memberships Here
+Membership.create(start_year: 2008, start_month: "March", gym: Gym.first, member: Member.second)
+Membership.create(start_year: 2008, start_month: "March", gym: Gym.first, member: Member.first)
+Membership.create(start_year: 2008, start_month: "March", gym: Gym.second, member: Member.first)
 
 puts "Seeding done!"
